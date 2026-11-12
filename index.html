@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osama Mohamed Fathy | IT Systems Engineer & Intelligent Automation Architect</title>
+  <meta name="description" content="Official Portfolio of Osama Mohamed Fathy - IT Systems Engineer, Intelligent Automation Architect, Creator of OS_V1, and Local Winner at NASA Space Apps Challenge 2025.">
+  <meta name="keywords" content="Osama Mohamed Fathy, AI Architect, NASA Space Apps, Tabeeby, Al-La'eeb, Mawasilati, OS_V1, Enterprise Automation, Systems Engineer">
+  <meta property="og:title" content="Osama Mohamed Fathy | 3D AI & Systems Portfolio">
+  <meta property="og:description" content="5+ Years Experience · 5 Award-Winning AI Projects · 3 Ministerial Presentations · NASA Space Apps 2025 Winner">
+  <meta property="og:image" content="assets/images/os-v1.jpg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Three.js CDN for 3D interactive graphics -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              blue: '#3b82f6',
+              purple: '#8b5cf6',
+              gold: '#f59e0b',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="cyber-grid min-h-screen text-slate-100 selection:bg-cyan-500 selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Brand -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition">
+          OS
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-white block group-hover:text-cyan-400 transition" data-i18n="nav.name">أسامة محمد فتحي</span>
+          <span class="text-xs text-cyan-400 font-mono tracking-wider block" data-i18n="nav.title">مهندس نظم وأتمتة ذكية</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition" data-i18n="nav.about">عن أسامة</a>
+        <a href="#awards" class="hover:text-amber-400 transition flex items-center gap-1.5">
+          <span class="text-amber-400">🏆</span>
+          <span data-i18n="nav.awards">الجوائز والتكريمات</span>
+        </a>
+        <a href="#projects" class="hover:text-cyan-400 transition" data-i18n="nav.projects">المشاريع والابتكارات</a>
+        <a href="#skills" class="hover:text-cyan-400 transition" data-i18n="nav.skills">المهارات</a>
+        <a href="#experience" class="hover:text-cyan-400 transition" data-i18n="nav.experience">المسيرة المهنية</a>
+        <a href="#education" class="hover:text-cyan-400 transition" data-i18n="nav.education">التعليم</a>
+        <a href="#contact" class="hover:text-cyan-400 transition" data-i18n="nav.contact">تواصل معي</a>
+      </nav>
+
+      <!-- Controls: Assistant, Lang, Theme & CTA -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Osama AI Assistant Shortcut -->
+        <button id="nav-assistant-btn" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-semibold hover:bg-cyan-900/60 transition shadow-sm" title="Chat with Osama AI">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+          </span>
+          <span data-i18n="nav.assistant">مساعد أسامة</span>
+        </button>
+
+        <!-- Language Toggle -->
+        <button id="lang-toggle-btn" class="px-2.5 py-1.5 rounded-lg border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-xs text-slate-200 transition font-mono" title="Change Language">
+          <span class="font-bold">EN</span> | <span>العربية</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="p-2 rounded-lg border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 transition" title="Toggle Theme">
+          <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg border border-slate-700 bg-slate-800/80 text-slate-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Nav -->
+    <div id="mobile-nav" class="hidden lg:hidden glass-panel border-t border-slate-800 px-6 py-4 flex flex-col gap-3 text-sm">
+      <a href="#about" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.about">عن أسامة</a>
+      <a href="#awards" class="py-1 text-amber-400 hover:text-amber-300" data-i18n="nav.awards">الجوائز والتكريمات</a>
+      <a href="#projects" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.projects">المشاريع والابتكارات</a>
+      <a href="#skills" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.skills">المهارات</a>
+      <a href="#experience" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.experience">المسيرة المهنية</a>
+      <a href="#education" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.education">التعليم</a>
+      <a href="#contact" class="py-1 text-slate-300 hover:text-cyan-400" data-i18n="nav.contact">تواصل معي</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH 3D CANVAS -->
+  <section id="hero" class="relative min-h-screen pt-28 pb-16 flex items-center justify-center overflow-hidden">
+    <!-- Three.js 3D Interactive Canvas -->
+    <div id="hero-canvas-container"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative hero-content w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Bio & Hero Text -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- NASA Space Apps Winner Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full badge-gold text-xs font-bold tracking-wide shadow-lg shadow-amber-500/10">
+            <span class="text-base">🚀</span>
+            <span data-i18n="hero.badge">🏆 فائز محلي في تحدي ناسا لتطبيقات الفضاء 2025 (NASA Space Apps)</span>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm md:text-base font-mono text-cyan-400 tracking-wider" data-i18n="hero.greeting">مرحباً، أنا</p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+              <span class="gradient-text-cyan-blue" data-i18n="hero.name">أسامة محمد فتحي</span>
+            </h1>
+            <p class="text-lg sm:text-xl font-semibold text-slate-300" data-i18n="hero.role">
+              مهندس نظم تكنولوجيا المعلومات & مهندس معماري للأتمتة الذكية والذكاء الاصطناعي
+            </p>
+          </div>
+
+          <p class="text-base text-slate-400 leading-relaxed max-w-2xl" data-i18n="hero.tagline">
+            أبني منصات مراقبة فورية، وأتمتة متقدمة للعمليات، ونماذج ذكاء اصطناعي فائزة بجوائز دولية وحكومية كبرى، تم استعراضها أمام وزراء في الحكومة المصرية.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transform hover:-translate-y-0.5 transition" data-i18n="hero.ctaProjects">
+              استكشف المشاريع الفائزة
+            </a>
+            <button onclick="document.getElementById('ai-bubble-btn').click()" class="px-6 py-3.5 rounded-xl glass-panel hover:bg-slate-800 text-cyan-300 font-bold text-sm border border-cyan-500/40 hover:border-cyan-400 transition flex items-center gap-2">
+              <span>⚡</span>
+              <span data-i18n="hero.ctaChat">تحدث مع مساعد أسامة الذكي</span>
+            </button>
+            <a href="#contact" class="px-5 py-3.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 text-sm font-semibold transition" data-i18n="nav.downloadCv">
+              تحميل السيرة الذاتية
+            </a>
+          </div>
+
+          <!-- Quick Stats / Metrics Counters -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80">
+            <div class="glass-panel p-3.5 rounded-xl text-center">
+              <span class="block text-2xl lg:text-3xl font-black text-cyan-400">5+</span>
+              <span class="text-xs text-slate-400 font-medium" data-i18n="hero.stats.exp">سنوات خبرة في الأنظمة</span>
+            </div>
+            <div class="glass-panel p-3.5 rounded-xl text-center">
+              <span class="block text-2xl lg:text-3xl font-black text-amber-400">5</span>
+              <span class="text-xs text-slate-400 font-medium" data-i18n="hero.stats.projects">مشاريع AI حاصدة لجوائز</span>
+            </div>
+            <div class="glass-panel p-3.5 rounded-xl text-center">
+              <span class="block text-2xl lg:text-3xl font-black text-indigo-400">3</span>
+              <span class="text-xs text-slate-400 font-medium" data-i18n="hero.stats.ministers">مشاريع عُرضت على وزراء</span>
+            </div>
+            <div class="glass-panel p-3.5 rounded-xl text-center">
+              <span class="block text-2xl lg:text-3xl font-black text-emerald-400">1st</span>
+              <span class="text-xs text-slate-400 font-medium" data-i18n="hero.stats.academic">الأول على الدفعة بامتياز</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 3D Holographic Tech Card of Osama -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <!-- Glowing Backlight -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-40 group-hover:opacity-75 transition duration-1000"></div>
+            
+            <div class="relative glass-panel rounded-3xl p-5 border border-cyan-500/30 shadow-2xl tilt-card">
+              <!-- Avatar Frame -->
+              <div class="relative rounded-2xl overflow-hidden aspect-square border border-slate-700/80 shadow-inner group">
+                <img src="assets/images/osama-profile.jpg" alt="Osama Mohamed Fathy" class="w-full h-full object-cover object-top transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                
+                <!-- Floating Inset Badge -->
+                <div class="absolute bottom-3 left-3 right-3 glass-panel p-2.5 rounded-xl border border-cyan-500/40 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-bold text-white">Cairo, Egypt</span>
+                  </div>
+                  <span class="text-xs font-mono text-cyan-400">Ain Shams & ITI</span>
+                </div>
+              </div>
+
+              <!-- Quick Highlights list -->
+              <div class="mt-4 space-y-2 text-xs text-slate-300">
+                <div class="flex items-center justify-between py-1.5 px-2 rounded-lg bg-slate-900/60">
+                  <span class="text-slate-400">Specialization:</span>
+                  <span class="font-semibold text-cyan-300">AI Architect & Systems</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 px-2 rounded-lg bg-slate-900/60">
+                  <span class="text-slate-400">Featured Creation:</span>
+                  <span class="font-semibold text-amber-300">OS_V1 Hybrid Model</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 px-2 rounded-lg bg-slate-900/60">
+                  <span class="text-slate-400">GitHub:</span>
+                  <a href="https://github.com/Osama-SysEng" target="_blank" class="font-mono text-cyan-400 hover:underline">@Osama-SysEng</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS & RECOGNITION GALLERY SECTION -->
+  <section id="awards" class="py-24 relative z-10 border-t border-slate-800/80 bg-slate-950/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs font-bold">
+          <span>🏆</span>
+          <span>Honorary Recognition</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="awards.heading">
+          الجوائز والتقديرات الوطنية والدولية
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base" data-i18n="awards.subheading">
+          تكريمات حكومية وريادية رفيعة المستوى من جهات دولية ووزراء في الحكومة المصرية
+        </p>
+      </div>
+
+      <!-- Awards Showcase Visual + Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
+        
+        <!-- Showcase Trophy Image -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel p-3 rounded-2xl border border-amber-500/30 overflow-hidden shadow-2xl tilt-card">
+            <img src="assets/images/awards-showcase.jpg" alt="Osama Mohamed Fathy Awards Showcase" class="w-full h-80 object-cover rounded-xl">
+            <div class="p-3 text-center">
+              <span class="text-xs font-bold text-amber-400">NASA Space Apps & Ministerial Innovation Gallery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards Grid -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <!-- Award 1: NASA Space Apps -->
+          <div class="glass-panel p-5 rounded-2xl border border-amber-500/40 hover:border-amber-400 transition tilt-card space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🚀</span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-bold border border-amber-500/30 font-mono">NASA 2025</span>
+            </div>
+            <h3 class="text-base font-bold text-white" data-i18n="awards.nasa.title">فائز محلي — تحدي ناسا لتطبيقات الفضاء 2025</h3>
+            <p class="text-xs font-medium text-amber-400 font-mono" data-i18n="awards.nasa.event">NASA Space Apps Challenge 2025 (551 events worldwide)</p>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="awards.nasa.desc">
+              فوز مشروع OSS Work والنموذج الهجين OS_V1 بالمركز الأول محلياً ضمن أكبر هاكاثون عالمي للفضاء.
+            </p>
+          </div>
+
+          <!-- Award 2: Google DevFest (Minister of Health) -->
+          <div class="glass-panel p-5 rounded-2xl border border-cyan-500/40 hover:border-cyan-400 transition tilt-card space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🩺</span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-500/30 font-mono">Google DevFest</span>
+            </div>
+            <h3 class="text-base font-bold text-white" data-i18n="awards.health.title">المركز الأول — مهرجان مطوري جوجل مصر 2025</h3>
+            <p class="text-xs font-medium text-cyan-400 font-mono" data-i18n="awards.health.event">Tabeeby · عُرض على معالي وزير الصحة</p>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="awards.health.desc">
+              الفوز بالمركز الأول عن مشروع 'طبيبي Tabeeby' وتم استعراضه أمام وزير الصحة المصري.
+            </p>
+          </div>
+
+          <!-- Award 3: Million Programmers (Minister of Youth & Sports) -->
+          <div class="glass-panel p-5 rounded-2xl border border-emerald-500/40 hover:border-emerald-400 transition tilt-card space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">⚽</span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30 font-mono">1M Programmers</span>
+            </div>
+            <h3 class="text-base font-bold text-white" data-i18n="awards.sports.title">المركز الأول — مبادرة مليون مبرمج مصري 2025</h3>
+            <p class="text-xs font-medium text-emerald-400 font-mono" data-i18n="awards.sports.event">Al-La'eeb · عُرض على وزير الشباب والرياضة</p>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="awards.sports.desc">
+              الفوز بالمركز الأول عن مشروع 'اللعيب Al-La'eeb' واستعراض المنصة أمام وزير الشباب والرياضة.
+            </p>
+          </div>
+
+          <!-- Award 4: Egypt AI Conference (Minister of Transport) -->
+          <div class="glass-panel p-5 rounded-2xl border border-indigo-500/40 hover:border-indigo-400 transition tilt-card space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🚆</span>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-bold border border-indigo-500/30 font-mono">ITIDA / MCIT</span>
+            </div>
+            <h3 class="text-base font-bold text-white" data-i18n="awards.transport.title">أفضل أثر مجتمعي — مؤتمر مصر للذكاء الاصطناعي</h3>
+            <p class="text-xs font-medium text-indigo-400 font-mono" data-i18n="awards.transport.event">Mawasilati · عُرض على وزير النقل</p>
+            <p class="text-xs text-slate-300 leading-relaxed" data-i18n="awards.transport.desc">
+              جائزة أفضل أثر مجتمعي عن تطبيق مواصلاتي الذكي الموحد واستعراضه أمام وزير النقل.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS & INNOVATIONS SHOWCASE -->
+  <section id="projects" class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-cyan text-xs font-bold">
+          <span>⚡</span>
+          <span>Engineering Portfolio</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="projects.heading">
+          المشاريع والابتكارات الاستثنائية
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base" data-i18n="projects.subheading">
+          حلول تقنية رائدة تجمع بين الرؤية الحاسوبية، النماذج اللغوية، وهندسة الأنظمة
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 mb-14">
+        <button class="project-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-panel bg-cyan-600 text-white transition" data-filter="all" data-i18n="projects.filterAll">الكل</button>
+        <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-panel text-slate-300 hover:text-cyan-400 transition" data-filter="ai" data-i18n="projects.filterAi">ذكاء اصطناعي & LLMs</button>
+        <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-panel text-slate-300 hover:text-cyan-400 transition" data-filter="automation" data-i18n="projects.filterAutomation">أتمتة وأنظمة</button>
+        <button class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold glass-panel text-slate-300 hover:text-cyan-400 transition" data-filter="iot" data-i18n="projects.filterIot">إنترنت الأشياء والروبوتات</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: Tabeeby -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-cyan-500/30 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="ai">
+          <div class="relative h-52 overflow-hidden group">
+            <img src="assets/images/tabeeby.jpg" alt="Tabeeby AI Healthcare OS" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full badge-cyan">Google DevFest 1st Place</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition">طبيبي (Tabeeby) — نظام تشغيل الرعاية الصحية</h3>
+              <p class="text-xs text-amber-400 font-mono mt-1">عُرض على معالي وزير الصحة والسكان</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed line-clamp-3">
+                بنية ثلاثية الطبقات مشفرة بـ AES-256، وروبوت RAG طبي مدرب على 15,000+ وثيقة، ونموذج رؤية يقرأ الأشعات في 8 ثوانٍ مع محاكاة جراحية VR/AR.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">FastAPI</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">U-Net+ResNet</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">Qdrant RAG</span>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+                <button onclick="openProjectModal('tabeeby')" class="text-cyan-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+                <a href="https://github.com/Osama-SysEng/Tabeeby" target="_blank" class="text-slate-400 hover:text-white font-mono">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Al-La'eeb -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-emerald-500/30 hover:border-emerald-400 transition tilt-card flex flex-col" data-category="ai">
+          <div class="relative h-52 overflow-hidden group">
+            <img src="assets/images/al-laeeb.jpg" alt="Al-La'eeb AI Football Scouting" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">1M Programmers 1st Place</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white hover:text-emerald-400 transition">اللعّيب (Al-La'eeb) — منصة التنقيب عن المواهب</h3>
+              <p class="text-xs text-amber-400 font-mono mt-1">عُرض على معالي وزير الشباب والرياضة</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed line-clamp-3">
+                تتبع 33 نقطة هيكلية عظمية بمعدل 30fps، وتوليد 47 مقياس أداء مقارن بـ 10,000 لاعب محترف عالمي مع حماية ضد التزييف ومدرب ذكي ناطق بالعربية والإنجليزية.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">MediaPipe</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">Motion CV</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">Arabic NLP</span>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+                <button onclick="openProjectModal('laeeb')" class="text-emerald-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+                <a href="https://github.com/Osama-SysEng/Al-Laeeb" target="_blank" class="text-slate-400 hover:text-white font-mono">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Mawasilati -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-amber-500/30 hover:border-amber-400 transition tilt-card flex flex-col" data-category="ai automation">
+          <div class="relative h-52 overflow-hidden group">
+            <img src="assets/images/mawasilati.jpg" alt="Mawasilati Intelligent Transport Platform" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full badge-gold">Best Social Impact (MCIT)</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white hover:text-amber-400 transition">مواصلاتي (Mawasilati) — تطبيق النقل الذكي الوطني</h3>
+              <p class="text-xs text-amber-400 font-mono mt-1">عُرض على معالي وزير النقل</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed line-clamp-3">
+                دمج 7 وسائل نقل عبر 500+ مسار و 3,200 محطة مع توقع ذكي للازدحام حتى 30 دقيقة مقدماً، ومخطط مسارات بالعامية المصرية ومساعد محادثة ذكي مدمج.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">Traffic Prediction</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">Flutter</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">Dialect NLP</span>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+                <button onclick="openProjectModal('mawasilati')" class="text-amber-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+                <a href="https://github.com/Osama-SysEng/Mawasilati" target="_blank" class="text-slate-400 hover:text-white font-mono">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: OSS Work & OS_V1 (NASA Winner) -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-purple-500/40 hover:border-purple-300 transition tilt-card flex flex-col" data-category="ai automation">
+          <div class="relative h-52 overflow-hidden group">
+            <img src="assets/images/os-v1.jpg" alt="OS_V1 Autonomous AI Agent - NASA Space Apps" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 rounded-full badge-gold">NASA Space Apps Local Winner</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-white hover:text-purple-400 transition">OSS Work & OS_V1 — النموذج الهجين والوكيل المكتبي</h3>
+              <p class="text-xs text-amber-400 font-mono mt-1">تحدي ناسا للفضاء 2025 · هاكاثون الذكاء الاصطناعي</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed line-clamp-3">
+                وكيل مكتبي مستقل يبني أنظمة ERP في 87 ثانية! يتعلم بالهندسة العكسية REA، يدعم 1M توكن لكل رسالة، ومزود بـ 6 وحدات رؤية بصرية لمحاكاة العين البشرية.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">Autonomous Agent</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">1M Tokens</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">Hybrid Reasoning</span>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+                <button onclick="openProjectModal('oss')" class="text-purple-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+                <a href="https://github.com/Osama-SysEng/OSS-Work" target="_blank" class="text-slate-400 hover:text-white font-mono">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: AI-Smart Engineer (GIECO) -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="automation">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-800 flex items-center justify-center text-2xl mb-3">🏗️</div>
+              <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition">المهندس الذكي (AI-Smart Engineer)</h3>
+              <p class="text-xs text-cyan-400 font-mono mt-1">شركة الغرابلي للأعمال الهندسية المتكاملة GIECO</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                أتمتة المكتب الفني عبر سحب البيانات من المخططات ومحطات الخرسانة ومطابقتها فورياً وإرسال التقارير للإدارة في 8 مشاريع متزامنة.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Data Pipeline</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Reconciliation</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Python</span>
+              </div>
+              <button onclick="openProjectModal('smartEngineer')" class="text-xs text-cyan-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Allamni (Learning Platform) -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="ai">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-950 border border-indigo-800 flex items-center justify-center text-2xl mb-3">📚</div>
+              <h3 class="text-lg font-bold text-white hover:text-indigo-400 transition">علّمني (Allamni) — منصة التعلم التكيفي الذكية</h3>
+              <p class="text-xs text-indigo-400 font-mono mt-1">مؤسسة الجملي التعليمية</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                منصة متعددة الصلاحيات (طلاب، معلمون، مديرون)، تدعم تلخيص المحاضرات بالصوت، تحويل الشرح لملفات PDF، خرائط ذهنية، وتقييمات تكيفية.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Salesforce</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Private Cloud</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Adaptive AI</span>
+              </div>
+              <button onclick="openProjectModal('allamni')" class="text-xs text-indigo-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: AI-Smart Monitor (Tabali Co.) -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="automation">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800 flex items-center justify-center text-2xl mb-3">📊</div>
+              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition">المراقب الذكي (AI-Smart Monitor)</h3>
+              <p class="text-xs text-blue-400 font-mono mt-1">شركة طبالي (Tabali Company)</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                تتبع المخزون بالذكاء الاصطناعي بربط الكاميرات وبوتات تليجرام للتنبيهات الفورية للإدارة، وإعادة هيكلة النظام بالكامل ليعمل بسلاسة عبر المتصفح.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Telegram API</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Camera Stream</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">PostgreSQL</span>
+              </div>
+              <button onclick="openProjectModal('smartMonitor')" class="text-xs text-blue-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: The H.R -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="automation ai">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-800 flex items-center justify-center text-2xl mb-3">👥</div>
+              <h3 class="text-lg font-bold text-white hover:text-emerald-400 transition">The H.R — إدارة القوى العاملة والتوظيف الذكي</h3>
+              <p class="text-xs text-emerald-400 font-mono mt-1">مصنع أسمنت مصري خليجي (متعدد الفروع)</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                حضور بيومتري مدمج مع الرواتب وسلاسل الإمداد، مع وحدة توظيف ذكية تفحص 500+ سيرة ذاتية آلياً وفق معايير مخصصة.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Biometric API</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">AI Screening</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Multi-Branch</span>
+              </div>
+              <button onclick="openProjectModal('theHr')" class="text-xs text-emerald-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Safety Robot & Fleet System -->
+        <div class="project-item glass-panel rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition tilt-card flex flex-col" data-category="iot automation">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-950 border border-amber-800 flex items-center justify-center text-2xl mb-3">🤖</div>
+              <h3 class="text-lg font-bold text-white hover:text-amber-400 transition">روبوت الأمان & نظام تتبع الأساطيل</h3>
+              <p class="text-xs text-amber-400 font-mono mt-1">مؤسسة ابن خلدون & موانئ الأردن</p>
+              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+                روبوت إلكتروني Arduino لكشف تسريب الغاز والإغلاق التلقائي، بالإضافة لمنصة سحابية متكاملة لتتبع أساطيل النقل البحري والبري.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Arduino (C/C++)</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Gas Sensors</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Fleet GPS</span>
+              </div>
+              <button onclick="openProjectModal('safetyRobot')" class="text-xs text-amber-400 font-semibold hover:underline">عرض التفاصيل الكاملة ←</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS & ARSENAL -->
+  <section id="skills" class="py-24 relative z-10 bg-slate-950/80 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-cyan text-xs font-bold">
+          <span>🛠️</span>
+          <span>Technical Stack</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="skills.heading">
+          المهارات والترسانة التقنية
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base" data-i18n="skills.subheading">
+          خبرات هندسية عميقة تمتد عبر لغات البرمجة، النماذج اللغوية، السحابة والأنظمة
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Category 1: AI & LLM -->
+        <div class="glass-panel p-6 rounded-2xl border border-cyan-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-cyan-950 border border-cyan-800 text-cyan-400 text-xl">🧠</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.ai">الذكاء الاصطناعي وهندسة النماذج اللغوية</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Prompt Engineering (CoT, ReAct)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">RAG (Qdrant + Ollama)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Computer Vision (U-Net, ResNet, OpenCV)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Arabic NLP & Dialect Processing</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">LLM Integration (GPT-4o, Gemini, Claude)</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Automation & Agents -->
+        <div class="glass-panel p-6 rounded-2xl border border-purple-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-purple-950 border border-purple-800 text-purple-400 text-xl">⚡</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.automation">الأتمتة والوكلاء الأذكياء</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">n8n Workflow Automation</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Multi-Agent Orchestration</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Telegram Bot API</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Webhook Pipelines</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Gmail & Calendar API Automation</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Programming & Frameworks -->
+        <div class="glass-panel p-6 rounded-2xl border border-blue-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-blue-950 border border-blue-800 text-blue-400 text-xl">💻</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.languages">لغات البرمجة وأطر العمل</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">Python</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">C#</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">Dart</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">SQL</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">FastAPI</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">Flask</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">ASP.NET Core</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono">Flutter</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Cloud & Infrastructure -->
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-emerald-950 border border-emerald-800 text-emerald-400 text-xl">☁️</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.cloud">السحابة والبنية التحتية والتشغيل</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Cloud Architecture & Data Centers</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Private Cloud Deployment</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Docker & Containers</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">GitHub Actions CI/CD</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Railway / Render / AWS</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Linux CLI & System Administration</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Systems & Databases -->
+        <div class="glass-panel p-6 rounded-2xl border border-amber-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-amber-950 border border-amber-800 text-amber-400 text-xl">🗄️</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.systems">الأنظمة والشبكات وقواعد البيانات</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">PostgreSQL & MySQL</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Qdrant Vector Database</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Network Installation & Security</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Server & CCTV Systems</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Automated Backup Protocols</span>
+          </div>
+        </div>
+
+        <!-- Category 6: ERP & Hardware -->
+        <div class="glass-panel p-6 rounded-2xl border border-pink-500/25 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2.5 rounded-xl bg-pink-950 border border-pink-800 text-pink-400 text-xl">🏢</span>
+            <h3 class="text-base font-bold text-white" data-i18n="skills.categories.erp">أنظمة الشركات والعتاد الذكي</h3>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">SAP Administration & Integration</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Odoo ERP Architecture</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Salesforce Development</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Arduino (C/C++) & Sensors</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-slate-300">Robotics Design & Assembly</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE TIMELINE -->
+  <section id="experience" class="py-24 relative z-10 border-t border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-cyan text-xs font-bold">
+          <span>💼</span>
+          <span>Career Journey</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="experience.heading">
+          المسيرة المهنية والخبرات الميدانية
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base" data-i18n="experience.subheading">
+          تدرج قيادي وهندسي مثبت عبر كبرى المؤسسات والمشاريع القومية
+        </p>
+      </div>
+
+      <!-- Timeline Items -->
+      <div class="space-y-8 relative before:absolute before:inset-0 before:left-8 md:before:left-1/2 before:w-0.5 before:bg-slate-800">
+        
+        <!-- Experience 1: Tabali -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">يناير 2026 – الآن</span>
+            <h3 class="text-lg font-bold text-white mt-2">مسؤول إدارة أنظمة تكنولوجيا المعلومات (IT System Administrator)</h3>
+            <p class="text-xs text-amber-400 font-semibold font-mono">شركة طبالي (Tabali Company)</p>
+          </div>
+          <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950 z-10"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="glass-panel p-5 rounded-2xl border border-slate-700/80 space-y-2 text-xs text-slate-300">
+              <p>• بناء نظام <strong>AI-Smart Monitor</strong> لتتبع المخزون بالذكاء الاصطناعي بربط الكاميرات وبوتات تليجرام للتنبيهات الفورية للإدارة و5 أقسام.</p>
+              <p>• إعادة هندسة النظام ليعمل بالكامل عبر المتصفح والقضاء على التباطؤ والانهيارات في كافة الأجهزة.</p>
+              <p>• اكتشاف وحل ثغرة أمنية في قاعدة البيانات وتطبيق بروتوكولات النسخ الاحتياطي التلقائي الآمن.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Freelance -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">أبريل 2025 – ديسمبر 2025</span>
+            <h3 class="text-lg font-bold text-white mt-2">استشاري تقني ومهندس نظم مستقل</h3>
+            <p class="text-xs text-amber-400 font-semibold font-mono">مصر · الأردن · الخليج</p>
+          </div>
+          <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950 z-10"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="glass-panel p-5 rounded-2xl border border-slate-700/80 space-y-2 text-xs text-slate-300">
+              <p>• <strong>مؤسسة ابن خلدون:</strong> هندسة روبوت الأمان لرصد تسريب الغاز بالأردوينو والإغلاق الذاتي مع سحابة مخصصة.</p>
+              <p>• <strong>هيئة الموانئ الأردنية:</strong> بناء منصة ذكاء الأساطيل السحابية لتتبع الأساطيل البرية والبحرية.</p>
+              <p>• <strong>مصنع أسمنت مصري خليجي:</strong> بناء منصة The H.R للحضور البيومتري وفحص 500+ سيرة ذاتية بالذكاء الاصطناعي.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: GIECO -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">أكتوبر 2021 – ديسمبر 2024</span>
+            <h3 class="text-lg font-bold text-white mt-2">رئيس قطاع المكتب الفني لمشروعات القاهرة</h3>
+            <p class="text-xs text-amber-400 font-semibold font-mono">شركة الغرابلي للأعمال الهندسية المتكاملة (GIECO)</p>
+          </div>
+          <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950 z-10"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="glass-panel p-5 rounded-2xl border border-slate-700/80 space-y-2 text-xs text-slate-300">
+              <p>• ترقية استثنائية من مسؤول جودة بيانات إلى مهندس مكتب فني خلال 7 أشهر، ثم رئيساً للمكتب الفني لقطاع مشروعات القاهرة.</p>
+              <p>• بناء نظام <strong>AI-Smart Engineer</strong> لربط وتدقيق بيانات محطات الخرسانة والموقع وكشف الفروقات تلقائياً.</p>
+              <p>• إدارة عمليات المكتب الفني عبر 8 مشروعات قومية كبرى متزامنة (طرق وكباري، منشآت حكومية، مجمعات سكنية).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4: El-Marasem -->
+        <div class="relative flex flex-col md:flex-row items-start group">
+          <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">أبريل 2019 – سبتمبر 2021</span>
+            <h3 class="text-lg font-bold text-white mt-2">مهندس تكنولوجيا معلومات (IT Engineer)</h3>
+            <p class="text-xs text-amber-400 font-semibold font-mono">شركة المراسم الدولية للمشاريع الهندسية</p>
+          </div>
+          <div class="absolute left-8 md:left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950 z-10"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="glass-panel p-5 rounded-2xl border border-slate-700/80 space-y-2 text-xs text-slate-300">
+              <p>• أربع ترقيات متتالية خلال سنتين: مساعد إداري ← منسق مستندات ← دعم فني Help Desk ← مهندس IT.</p>
+              <p>• تطوير موقع الشركة وتحسين محركات البحث SEO ليتصدر النتائج الأولى.</p>
+              <p>• الدعم الفني لمشروع تشجير النهر الأخضر بالعاصمة الإدارية الجديدة ومجمع بيت الوطن.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="py-24 relative z-10 bg-slate-950/80 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-gold text-xs font-bold">
+            <span>🎓</span>
+            <span>Academic Excellence</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="education.heading">
+            التعليم والشهادات الاحترافية
+          </h2>
+          <p class="text-slate-400 text-sm leading-relaxed" data-i18n="education.subheading">
+            سجل أكاديمي استثنائي بالمركز الأول مع مرتبة الشرف والامتياز في كافة المراحل التعليمية
+          </p>
+
+          <div class="space-y-4">
+            <div class="glass-panel p-4 rounded-xl border border-cyan-500/30">
+              <span class="text-xs font-mono text-cyan-400">2026 · دفعة التخرج</span>
+              <h4 class="text-base font-bold text-white mt-1" data-i18n="education.bsc">بكالوريوس هندسة البرمجيات — جامعة عين شمس</h4>
+              <p class="text-xs text-emerald-400 mt-1 font-semibold" data-i18n="education.honor">المركز الأول على الدفعة بمرتبة الشرف والامتياز</p>
+            </div>
+
+            <div class="glass-panel p-4 rounded-xl border border-purple-500/30">
+              <span class="text-xs font-mono text-purple-400">قيد الدراسة</span>
+              <h4 class="text-base font-bold text-white mt-1" data-i18n="education.msc">ماجستير هندسة الروبوتات والذكاء الاصطناعي — معهد تكنولوجيا المعلومات (ITI)</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
+            <h4 class="text-sm font-bold text-slate-300 uppercase tracking-wider font-mono">الشهادات والمنح المعتمدة</h4>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>شهادة نظم المعلومات الإدارية MIS (منحة HICMIS)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>شهادة تحليل البيانات المتقدمة (المنحة الكندية)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>بايثون لعلوم البيانات (مبادرة مصر الرقمية)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>شهادة الذكاء الاصطناعي (معهد القوات المسلحة)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>الشهادة المتقدمة للذكاء الاصطناعي AI Advanced</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>الرخصة الدولية لقيادة الحاسب الآلي ICDL</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>تدريب المدربين TOT (منحة الجامعة الأمريكية AUC)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>دورة قواعد البيانات SQL (Udemy)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & COLLABORATION SECTION -->
+  <section id="contact" class="py-24 relative z-10 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-cyan text-xs font-bold">
+          <span>📬</span>
+          <span>Get in Touch</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="contact.heading">
+          دعنا نبني المستقبل معاً
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base" data-i18n="contact.subheading">
+          متاح للاستشارات التقنية، قيادة مشاريع الذكاء الاصطناعي والأتمتة، والفرص الهندسية المتقدمة
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Contact Cards -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Email Card -->
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center justify-between group hover:border-cyan-400 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-950 text-cyan-400 flex items-center justify-center text-xl">✉️</div>
+              <div>
+                <span class="text-xs text-slate-400 block">البريد الإلكتروني</span>
+                <a href="mailto:ososama7979@gmail.com" class="text-sm font-mono font-bold text-white hover:text-cyan-400">ososama7979@gmail.com</a>
+              </div>
+            </div>
+            <button onclick="copyToClipboard('ososama7979@gmail.com', 'البريد الإلكتروني')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">نسخ</button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center justify-between group hover:border-cyan-400 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center text-xl">📱</div>
+              <div>
+                <span class="text-xs text-slate-400 block">الهاتف / واتساب</span>
+                <a href="tel:+201156124827" class="text-sm font-mono font-bold text-white hover:text-emerald-400" dir="ltr">+20 115 612 4827</a>
+              </div>
+            </div>
+            <button onclick="copyToClipboard('+201156124827', 'رقم الهاتف')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">نسخ</button>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center justify-between group hover:border-cyan-400 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center text-xl">🐙</div>
+              <div>
+                <span class="text-xs text-slate-400 block">مستودع الأكواد GitHub</span>
+                <a href="https://github.com/Osama-SysEng" target="_blank" class="text-sm font-mono font-bold text-white hover:text-cyan-400">github.com/Osama-SysEng</a>
+              </div>
+            </div>
+            <a href="https://github.com/Osama-SysEng" target="_blank" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">زيارة ↗</a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="glass-panel p-5 rounded-2xl border border-slate-800 flex items-center justify-between group hover:border-cyan-400 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-950 text-blue-400 flex items-center justify-center text-xl">💼</div>
+              <div>
+                <span class="text-xs text-slate-400 block">الملف المهني LinkedIn</span>
+                <a href="https://linkedin.com/in/osama-mohamed-57159a410" target="_blank" class="text-sm font-mono font-bold text-white hover:text-blue-400">osama-mohamed-57159a410</a>
+              </div>
+            </div>
+            <a href="https://linkedin.com/in/osama-mohamed-57159a410" target="_blank" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">زيارة ↗</a>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <form id="contact-form" class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-4">
+            <h3 class="text-lg font-bold text-white mb-2" data-i18n="contact.sendMsg">إرسال رسالة مباشرة</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs text-slate-400 mb-1">الاسم الكريم</label>
+                <input type="text" required placeholder="اسمك الكريم" data-i18n="contact.namePlaceholder" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400 transition">
+              </div>
+              <div>
+                <label class="block text-xs text-slate-400 mb-1">البريد الإلكتروني</label>
+                <input type="email" required placeholder="name@example.com" data-i18n="contact.emailPlaceholder" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400 transition">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">الموضوع</label>
+              <input type="text" required placeholder="فرصة عمل / استشارة / تعاون تقني" data-i18n="contact.subjectPlaceholder" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">الرسالة</label>
+              <textarea rows="4" required placeholder="اكتب تفاصيل رسالتك هنا..." data-i18n="contact.messagePlaceholder" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 transition" data-i18n="contact.sendBtn">
+              إرسال الرسالة الآن
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-slate-800 bg-slate-950 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p>© 2026 <strong>أسامة محمد فتحي (Osama Mohamed Fathy)</strong>. جميع الحقوق محفوظة.</p>
+        <p class="text-[11px] text-slate-500 mt-1">مشروع الموقع مفتوح المصدر على GitHub ومستضاف على خوادم مجانية فائقة السرعة.</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Osama-SysEng" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
+        <a href="https://linkedin.com/in/osama-mohamed-57159a410" target="_blank" class="hover:text-cyan-400 transition">LinkedIn</a>
+        <a href="mailto:ososama7979@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING SMART AI ASSISTANT WIDGET: "أسامة" (OSAMA AI) -->
+  <div class="ai-assistant-bubble">
+    <button id="ai-bubble-btn" class="w-14 h-14 rounded-full bg-gradient-to-tr from-cyan-500 via-blue-600 to-purple-600 text-white shadow-xl flex items-center justify-center pulse-glow relative cursor-pointer" title="تحدث مع مساعد أسامة الذكي">
+      <span class="text-2xl">🤖</span>
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 border-2 border-slate-950 rounded-full animate-pulse"></span>
+    </button>
+  </div>
+
+  <!-- AI ASSISTANT CHAT WINDOW -->
+  <div id="ai-chat-window" class="ai-chat-window glass-panel border border-cyan-500/40 hidden">
+    <!-- Chat Header -->
+    <div class="p-4 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-lg text-white">🤖</div>
+        <div>
+          <h4 class="text-sm font-bold text-white flex items-center gap-1.5" data-i18n="assistant.title">
+            مساعد أسامة الذكي
+          </h4>
+          <span class="text-[11px] text-emerald-400 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <span data-i18n="assistant.status">متصل وجاهز للإجابة</span>
+          </span>
+        </div>
+      </div>
+      <button id="ai-close-btn" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">✕</button>
+    </div>
+
+    <!-- Quick Prompts Scrollbar -->
+    <div id="ai-chips-container" class="p-2.5 bg-slate-900/60 border-b border-slate-800/80 flex items-center gap-2 overflow-x-auto no-scrollbar">
+      <!-- Injected dynamically -->
+    </div>
+
+    <!-- Messages Container -->
+    <div id="ai-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-xs">
+      <div class="flex justify-start">
+        <div class="bg-slate-800 text-slate-100 border border-slate-700 rounded-2xl rounded-bl-none px-4 py-2.5 max-w-[88%] text-xs shadow-md leading-relaxed" data-i18n="assistant.welcome">
+          أهلاً بك! أنا المساعد الذكي للمهندس أسامة محمد فتحي. يسعدني الإجابة عن أي استفسار يخص مشاريعه مثل Tabeeby، أو نموذجه الحائز على المركز الأول في ناسا OS_V1، أو خبراته في الأتمتة والسحابة. كيف أساعدك اليوم؟
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Bar -->
+    <div class="p-3 bg-slate-900 border-t border-slate-800 flex items-center gap-2">
+      <input id="ai-chat-input" type="text" placeholder="اسألني عن مشاريع أسامة، جوائزه، أو خبراته..." data-i18n="assistant.placeholder" class="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white focus:outline-none focus:border-cyan-400 transition">
+      <button id="ai-send-btn" class="p-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-400 hover:to-blue-500 transition">
+        <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="glass-panel w-full max-w-2xl rounded-3xl border border-cyan-500/40 overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-200">
+      <div class="relative h-64 overflow-hidden">
+        <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+        <button id="modal-close-btn" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-950/80 text-white flex items-center justify-center hover:bg-slate-900 transition">✕</button>
+        <span id="modal-award" class="absolute bottom-4 right-4 text-xs font-bold px-3 py-1 rounded-full badge-gold font-mono"></span>
+      </div>
+      <div class="p-6 space-y-4">
+        <h3 id="modal-title" class="text-xl font-bold text-white"></h3>
+        <p id="modal-desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed"></p>
+        <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+        <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+          <a id="modal-github" href="#" target="_blank" class="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold transition">
+            عرض المستودع البرمجي على GitHub ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notification" class="fixed bottom-6 left-6 z-50 glass-panel border border-cyan-500 px-4 py-2.5 rounded-xl text-xs font-semibold text-cyan-300 shadow-2xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-4"></div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/assistant.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
