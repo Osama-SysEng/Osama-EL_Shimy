@@ -1,9 +1,9 @@
-// Comprehensive Multilingual Content Dictionary
+﻿// Comprehensive Multilingual Content Dictionary
 const translations = {
   ar: {
     // Navigation
     nav: {
-      name: "أسامة محمد فتحي",
+      name: "أسامة محمد (الشيمي)",
       title: "مهندس نظم وأتمتة ذكية",
       about: "عن أسامة",
       awards: "الجوائز والتكريمات",
@@ -20,7 +20,7 @@ const translations = {
     hero: {
       badge: "🏆 فائز محلي في تحدي ناسا لتطبيقات الفضاء 2025 (NASA Space Apps)",
       greeting: "مرحباً، أنا",
-      name: "أسامة محمد فتحي",
+      name: "أسامة محمد (الشيمي)",
       role: "مهندس نظم تكنولوجيا المعلومات & مهندس معماري للأتمتة الذكية والذكاء الاصطناعي",
       tagline: "أبني منصات مراقبة فورية، وأتمتة متقدمة للعمليات، ونماذج ذكاء اصطناعي فائزة بجوائز دولية وحكومية.",
       ctaProjects: "استكشف المشاريع الفائزة",
@@ -34,7 +34,7 @@ const translations = {
     },
     // About
     about: {
-      heading: "عن أسامة محمد فتحي",
+      heading: "عن أسامة محمد (الشيمي)",
       subheading: "شغف بالهندسة المعمارية للنظم والذكاء الاصطناعي التوليدي والأتمتة",
       bio1: "مهندس نظم تكنولوجيا معلومات ومعماري أتمتة ذكية بخبرة تتجاوز 5 سنوات في إدارة الأنظمة، وتكامل أنظمة تخطيط الموارد (SAP, Odoo, Salesforce)، والبنية التحتية السحابية، والأتمتة المدفوعة بنماذج الذكاء الاصطناعي.",
       bio2: "مبتكر مستقل وراء 5 مشاريع ذكاء اصطناعي فائزة بجوائز كبرى — تم عرض ثلاثة منها مباشرة على وزراء في الحكومة المصرية (وزير الصحة، وزير الشباب والرياضة، ووزير النقل) — بما في ذلك تحقيق لقب الفائز المحلي في تحدي ناسا لتطبيقات الفضاء NASA Space Apps Challenge 2025 من بين 551 حدثاً حول العالم.",
@@ -248,7 +248,7 @@ const translations = {
       status: "متصل وجاهز للإجابة",
       placeholder: "اسألني عن مشاريع أسامة، جوائزه، أو خبراته...",
       send: "إرسال",
-      welcome: "أهلاً بك! أنا المساعد الذكي للمهندس أسامة محمد فتحي. يسعدني الإجابة عن أي استفسار يخص مشاريعه مثل Tabeeby، أو نموذجه الحائز على المركز الأول في ناسا OS_V1، أو خبراته في الأتمتة والسحابة. كيف أساعدك اليوم؟",
+      welcome: "أهلاً بك! أنا المساعد الذكي للمهندس أسامة محمد (الشيمي). يسعدني الإجابة عن أي استفسار يخص مشاريعه مثل Tabeeby، أو نموذجه الحائز على المركز الأول في ناسا OS_V1، أو خبراته في الأتمتة والسحابة. كيف أساعدك اليوم؟",
       quickPrompts: [
         "حدثني عن الفوز في تحدي ناسا Space Apps 2025؟",
         "ما هي المشاريع الثلاثة المعروضة على وزراء مصر؟",
@@ -261,7 +261,7 @@ const translations = {
   en: {
     // Navigation
     nav: {
-      name: "Osama Mohamed Fathy",
+      name: "Osama Mohamed (El-Shimy)",
       title: "IT Systems & Automation Architect",
       about: "About",
       awards: "Awards",
@@ -278,7 +278,7 @@ const translations = {
     hero: {
       badge: "🏆 NASA Space Apps Challenge 2025 Local Winner",
       greeting: "Hello, I am",
-      name: "Osama Mohamed Fathy",
+      name: "Osama Mohamed (El-Shimy)",
       role: "IT Systems Engineer & Intelligent Automation Architect",
       tagline: "Building real-time monitoring, autonomous enterprise automation platforms, and award-winning AI models.",
       ctaProjects: "Explore Award-Winning Projects",
@@ -292,7 +292,7 @@ const translations = {
     },
     // About
     about: {
-      heading: "About Osama Mohamed Fathy",
+      heading: "About Osama Mohamed (El-Shimy)",
       subheading: "Passion for Systems Architecture, Generative AI & Autonomous Automation",
       bio1: "IT Systems Engineer & Intelligent Automation Architect with 5+ years of experience across systems administration, ERP integration (SAP, Odoo, Salesforce), cloud infrastructure, and AI-driven automation.",
       bio2: "Independent innovator behind five award-winning AI projects — three presented directly to Egyptian government ministers (Minister of Health, Minister of Youth & Sports, Minister of Transport) — including a Local Winner title at NASA Space Apps Challenge 2025 (selected from 551 local events worldwide). Consistent 1st-in-class academic record with distinction throughout.",
@@ -506,7 +506,7 @@ const translations = {
       status: "Online & Ready to Help",
       placeholder: "Ask about Osama's projects, awards, or engineering experience...",
       send: "Send",
-      welcome: "Hello! I am Osama Mohamed Fathy's AI Assistant. I can tell you all about his NASA Space Apps award, ministerial recognitions, his AI healthcare platform Tabeeby, or his autonomous agent OS_V1. How can I help you today?",
+      welcome: "Hello! I am Osama Mohamed (El-Shimy)'s AI Assistant. I can tell you all about his NASA Space Apps award, ministerial recognitions, his AI healthcare platform Tabeeby, or his autonomous agent OS_V1. How can I help you today?",
       quickPrompts: [
         "Tell me about winning the NASA Space Apps Challenge 2025?",
         "What are the 3 projects presented to Egyptian Ministers?",
@@ -517,3 +517,4 @@ const translations = {
     }
   }
 };
+

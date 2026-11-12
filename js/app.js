@@ -1,4 +1,4 @@
-// Main Application Logic
+﻿// Main Application Logic
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Language State & Switcher
   let currentLang = localStorage.getItem('osama_portfolio_lang') || 'ar';
@@ -215,3 +215,4 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(currentLang);
   applyTheme(currentTheme);
 });
+

@@ -1,4 +1,4 @@
-// Three.js Interactive 3D Canvas Scene
+﻿// Three.js Interactive 3D Canvas Scene
 (function() {
   const container = document.getElementById('hero-canvas-container');
   if (!container) return;
@@ -175,3 +175,4 @@
     animate();
   }
 })();
+

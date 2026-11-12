@@ -1,11 +1,11 @@
-# 🚀 Osama Mohamed Fathy — 3D Portfolio & AI Platform
+﻿# 🚀 Osama Mohamed (El-Shimy) — 3D Portfolio & AI Platform
 
 [![NASA Space Apps Challenge 2025](https://img.shields.io/badge/NASA%20Space%20Apps-Local%20Winner%202025-gold.svg)](https://www.spaceappschallenge.org/)
 [![Google DevFest](https://img.shields.io/badge/Google%20DevFest%20Egypt%202025-1st%20Place-blue.svg)](https://developers.google.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-cyan.svg)](https://osama-syseng.github.io/osama-fathy-portfolio/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-cyan.svg)](https://osama-syseng.github.io/osama-mohamed-portfolio/)
 
-> **الموقع الشخصي التفاعلي ثلاثي الأبعاد للمهندس أسامة محمد فتحي**  
+> **الموقع الشخصي التفاعلي ثلاثي الأبعاد للمهندس أسامة محمد (الشيمي)**  
 > مهندس نظم تكنولوجيا المعلومات، معماري الأتمتة الذكية والذكاء الاصطناعي، ومبتكر النموذج الهجين **OS_V1**.
 
 ---
@@ -30,7 +30,7 @@
 ## 📂 هيكلية المشروع (Project Architecture)
 
 ```
-osama-fathy-portfolio/
+osama-mohamed-portfolio/
 ├── index.html               # الصفحة الرئيسية والواجهة المتكاملة
 ├── css/
 │   └── styles.css           # تنسيقات Glassmorphism والثيمات والتأثيرات ثلاثية الأبعاد
@@ -57,11 +57,11 @@ osama-fathy-portfolio/
 
 ### 1. الاستضافة عبر GitHub Pages (الأسهل والموصى بها)
 المشروع عبارة عن Static Web Application خالص، لا يحتاج أي أوامر بناء (Zero-build)!
-1. ادخل إلى مستودعك على GitHub: `https://github.com/Osama-SysEng/osama-fathy-portfolio`
+1. ادخل إلى مستودعك على GitHub: `https://github.com/Osama-SysEng/osama-mohamed-portfolio`
 2. اذهب إلى **Settings** ← **Pages**.
 3. في خيار **Source** اختر: `Deploy from a branch`، واختر فرع `main` والمجلد `/ (root)`.
 4. اضغط **Save** — سيتم نشر الموقع مجاناً وفورياً على:
-   `https://osama-syseng.github.io/osama-fathy-portfolio/`
+   `https://osama-syseng.github.io/osama-mohamed-portfolio/`
 
 ### 2. الاستضافة بنقرة واحدة عبر Vercel أو Netlify
 - يمكنك ربط المستودع مباشرة بـ Vercel أو Netlify ليتم النشر التلقائي مجاناً مع نطاق مخصص وشهادة SSL مجانية.
@@ -70,3 +70,4 @@ osama-fathy-portfolio/
 
 ## 📜 الترخيص (License)
 هذا المشروع مفتوح المصدر ومتاح للجميع تحت ترخيص [MIT License](LICENSE).
+

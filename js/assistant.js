@@ -1,4 +1,4 @@
-// Smart AI Assistant: "Osama AI" (مساعد أسامة الذكي)
+﻿// Smart AI Assistant: "Osama AI" (مساعد أسامة الذكي)
 (function() {
   const assistantKnowledge = {
     nasa: {
@@ -70,9 +70,9 @@
 
     // Default friendly answer
     if (lang === 'ar') {
-      return `شكراً لسؤالك! أنا المساعد الذكي للمهندس أسامة محمد فتحي. يمكنني إفادتك بمعلومات تفصيلية عن:\n- مشاريعه الخمسة الفائزة بجوائز دولية ومحلية (مثل Tabeeby، Al-La'eeb، Mawasilati، و OS_V1).\n- فوزه في تحدي ناسا Space Apps 2025.\n- خبرته في إدارة الأنظمة والأتمتة السحابية والـ ERP.\n- كيفية التواصل والتعاون التقني معه.\n\nجرّب النقر على أحد الأسئلة المقترحة أعلاه!`;
+      return `شكراً لسؤالك! أنا المساعد الذكي للمهندس أسامة محمد (الشيمي). يمكنني إفادتك بمعلومات تفصيلية عن:\n- مشاريعه الخمسة الفائزة بجوائز دولية ومحلية (مثل Tabeeby، Al-La'eeb، Mawasilati، و OS_V1).\n- فوزه في تحدي ناسا Space Apps 2025.\n- خبرته في إدارة الأنظمة والأتمتة السحابية والـ ERP.\n- كيفية التواصل والتعاون التقني معه.\n\nجرّب النقر على أحد الأسئلة المقترحة أعلاه!`;
     } else {
-      return `Thank you for your question! I am Eng. Osama Mohamed Fathy's AI Assistant. I can help you with:\n- His 5 award-winning AI projects (Tabeeby, Al-La'eeb, Mawasilati, and OS_V1).\n- His NASA Space Apps Challenge 2025 Local Winner title.\n- 5+ years of experience in Systems Administration, Cloud, and ERP integration.\n- Direct contact and hiring details.\n\nTry clicking one of the suggested prompts above!`;
+      return `Thank you for your question! I am Eng. Osama Mohamed (El-Shimy)'s AI Assistant. I can help you with:\n- His 5 award-winning AI projects (Tabeeby, Al-La'eeb, Mawasilati, and OS_V1).\n- His NASA Space Apps Challenge 2025 Local Winner title.\n- 5+ years of experience in Systems Administration, Cloud, and ERP integration.\n- Direct contact and hiring details.\n\nTry clicking one of the suggested prompts above!`;
     }
   }
 
@@ -179,3 +179,4 @@
     window.renderAssistantChips();
   });
 })();
+
