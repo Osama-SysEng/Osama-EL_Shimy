@@ -3,7 +3,8 @@ const translations = {
   ar: {
     // Navigation
     nav: {
-      name: "أسامة محمد (الشيمي)",
+      platform: "Osama",
+      name: "أسامة محمد فتحي",
       title: "مهندس نظم وأتمتة ذكية",
       about: "عن أسامة",
       awards: "الجوائز والتكريمات",
@@ -12,19 +13,21 @@ const translations = {
       experience: "المسيرة المهنية",
       education: "التعليم والشهادات",
       contact: "تواصل معي",
-      assistant: "مساعد أسامة",
+      assistant: "مساعد أسامة الذكي",
       downloadCv: "تحميل السيرة الذاتية",
       hireMe: "وظفني الآن"
     },
     // Hero
     hero: {
       badge: "🏆 فائز محلي في تحدي ناسا لتطبيقات الفضاء 2025 (NASA Space Apps)",
-      greeting: "مرحباً، أنا",
-      name: "أسامة محمد (الشيمي)",
+      greeting: "مرحباً بكم في منصة Osama، أنا",
+      name: "أسامة محمد فتحي",
       role: "مهندس نظم تكنولوجيا المعلومات & مهندس معماري للأتمتة الذكية والذكاء الاصطناعي",
-      tagline: "أبني منصات مراقبة فورية، وأتمتة متقدمة للعمليات، ونماذج ذكاء اصطناعي فائزة بجوائز دولية وحكومية.",
+      tagline: "أبني منصات مراقبة فورية، وأتمتة متقدمة للعمليات، ونماذج ذكاء اصطناعي فائزة بجوائز دولية وحكومية كبرى، تم استعراضها أمام وزراء في الحكومة المصرية.",
       ctaProjects: "استكشف المشاريع الفائزة",
       ctaChat: "تحدث مع مساعد أسامة الذكي",
+      whatsappBtn: "مراسلة واتساب فورية",
+      emailBtn: "مراسلة بالبريد الإلكتروني",
       stats: {
         exp: "سنوات خبرة في الأنظمة",
         projects: "مشاريع AI حاصدة لجوائز",
@@ -34,20 +37,21 @@ const translations = {
     },
     // About
     about: {
-      heading: "عن أسامة محمد (الشيمي)",
+      heading: "عن المهندس أسامة محمد فتحي",
       subheading: "شغف بالهندسة المعمارية للنظم والذكاء الاصطناعي التوليدي والأتمتة",
       bio1: "مهندس نظم تكنولوجيا معلومات ومعماري أتمتة ذكية بخبرة تتجاوز 5 سنوات في إدارة الأنظمة، وتكامل أنظمة تخطيط الموارد (SAP, Odoo, Salesforce)، والبنية التحتية السحابية، والأتمتة المدفوعة بنماذج الذكاء الاصطناعي.",
       bio2: "مبتكر مستقل وراء 5 مشاريع ذكاء اصطناعي فائزة بجوائز كبرى — تم عرض ثلاثة منها مباشرة على وزراء في الحكومة المصرية (وزير الصحة، وزير الشباب والرياضة، ووزير النقل) — بما في ذلك تحقيق لقب الفائز المحلي في تحدي ناسا لتطبيقات الفضاء NASA Space Apps Challenge 2025 من بين 551 حدثاً حول العالم.",
       location: "القاهرة، مصر",
       email: "ososama7979@gmail.com",
       phone: "+20 115 612 4827",
+      whatsapp: "+20 115 612 4827",
       github: "github.com/Osama-SysEng",
       linkedin: "linkedin.com/in/osama-mohamed-57159a410"
     },
     // Awards & Recognition
     awards: {
       heading: "الجوائز والتقديرات الوطنية والدولية",
-      subheading: "تكريمات حكومية وريادية رفيعة المستوى",
+      subheading: "تكريمات حكومية وريادية رفيعة المستوى من جهات دولية ووزراء في الحكومة المصرية",
       nasa: {
         title: "فائز محلي — تحدي ناسا لتطبيقات الفضاء 2025",
         event: "NASA Space Apps Challenge 2025",
@@ -130,7 +134,7 @@ const translations = {
         theHr: {
           title: "The H.R — منصة الحضور البيومتري وإدارة القوى العاملة بالذكاء الاصطناعي",
           award: "مصنع أسمنت مصري خليجي (متعدد الفروع)",
-          desc: "منصة حضور بيومترية شاملة تجمع بين الموارد البشرية والمالية وسلاسل الإمداد، وتتضمن وحدة توظيف ذكية تفحص أكثر من 500 سيرة ذاتية آلياً وفق معايير دقيقة وتقدم تقارير الفرز النهائي.",
+          desc: "منصة حضور بيومترية شاملة تجمع بين الموارد البشرية والمالية وسلاسل الإمداد، وتتضمن وحدة توظيف ذكية تفحص أكثر من 500 سيرة ذاتية آلياً وفق معايير دقيقة وتقديم تقارير الفرز النهائي.",
           tags: ["Biometric Integration", "AI Screening", "Payroll Analytics", "Multi-Branch"]
         },
         safetyRobot: {
@@ -231,37 +235,43 @@ const translations = {
     },
     // Contact
     contact: {
-      heading: "دعنا نبني المستقبل معاً",
-      subheading: "متاح للاستشارات التقنية، قيادة مشاريع الذكاء الاصطناعي والأتمتة، والفرص الهندسية المتقدمة",
-      sendMsg: "إرسال رسالة مباشرة",
+      heading: "تواصل مباشر مع أسامة",
+      subheading: "اختر وسيلة التواصل التي تفضلها: واتساب فوري، بريد إلكتروني، أو مكالمة هاتفية مباشرة",
+      channelLabel: "قناة الإرسال المفضلة:",
+      channelWhatsapp: "واتساب فوري (WhatsApp)",
+      channelEmail: "بريد إلكتروني (Email)",
+      channelPhone: "مكالمة هاتفية (Phone Call)",
+      sendMsg: "إرسال رسالة مباشرة للمهندس أسامة",
       namePlaceholder: "اسمك الكريم",
       emailPlaceholder: "بريدك الإلكتروني",
-      subjectPlaceholder: "الموضوع",
-      messagePlaceholder: "اكتب رسالتك هنا...",
-      sendBtn: "إرسال الرسالة الآن",
+      phonePlaceholder: "رقم هاتفك (اختياري)",
+      subjectPlaceholder: "الموضوع (فرصة عمل، استشارة، مشروع)",
+      messagePlaceholder: "اكتب رسالتك وتفاصيل مشروعك هنا...",
+      sendBtn: "إرسال الرسالة الآن 🚀",
       directInfo: "معلومات الاتصال المباشرة",
       copied: "تم النسخ بنجاح!"
     },
     // AI Assistant Widget
     assistant: {
       title: "مساعد أسامة الذكي",
-      status: "متصل وجاهز للإجابة",
-      placeholder: "اسألني عن مشاريع أسامة، جوائزه، أو خبراته...",
+      status: "متصل ويمكنه توصيل رسالتك فوراً",
+      placeholder: "اطلب من المساعد إرسال رسالة لأسامة أو اسأله عن خبراته...",
       send: "إرسال",
-      welcome: "أهلاً بك! أنا المساعد الذكي للمهندس أسامة محمد (الشيمي). يسعدني الإجابة عن أي استفسار يخص مشاريعه مثل Tabeeby، أو نموذجه الحائز على المركز الأول في ناسا OS_V1، أو خبراته في الأتمتة والسحابة. كيف أساعدك اليوم؟",
+      welcome: "أهلاً بك في منصة Osama! أنا المساعد الذكي للمهندس أسامة محمد فتحي. يسعدني الإجابة عن أي استفسار يخص مشاريعه وجوائزه، كما يمكنني توصيل رسالتك له فوراً عبر الواتساب أو البريد الإلكتروني. كيف أساعدك اليوم؟",
       quickPrompts: [
+        "أريد إرسال رسالة مباشرة لأسامة عبر الواتساب 📱",
         "حدثني عن الفوز في تحدي ناسا Space Apps 2025؟",
         "ما هي المشاريع الثلاثة المعروضة على وزراء مصر؟",
         "كيف يعمل نظام طبيبي Tabeeby؟",
-        "ما هي مهارات أسامة في هندسة الذكاء الاصطناعي والأتمتة؟",
-        "كيف يمكنني التواصل مع أسامة لتوظيفه أو التعاون معه؟"
+        "ما هي مهارات أسامة في هندسة الذكاء الاصطناعي والأتمتة؟"
       ]
     }
   },
   en: {
     // Navigation
     nav: {
-      name: "Osama Mohamed (El-Shimy)",
+      platform: "Osama",
+      name: "Osama Mohamed Fathy",
       title: "IT Systems & Automation Architect",
       about: "About",
       awards: "Awards",
@@ -277,12 +287,14 @@ const translations = {
     // Hero
     hero: {
       badge: "🏆 NASA Space Apps Challenge 2025 Local Winner",
-      greeting: "Hello, I am",
-      name: "Osama Mohamed (El-Shimy)",
+      greeting: "Welcome to Osama Platform, I am",
+      name: "Osama Mohamed Fathy",
       role: "IT Systems Engineer & Intelligent Automation Architect",
-      tagline: "Building real-time monitoring, autonomous enterprise automation platforms, and award-winning AI models.",
+      tagline: "Building real-time monitoring, autonomous enterprise automation platforms, and award-winning AI models presented to Egyptian Government Ministers.",
       ctaProjects: "Explore Award-Winning Projects",
       ctaChat: "Chat with Osama AI",
+      whatsappBtn: "Instant WhatsApp",
+      emailBtn: "Send Direct Email",
       stats: {
         exp: "Years Experience in Systems",
         projects: "Award-Winning AI Projects",
@@ -292,13 +304,14 @@ const translations = {
     },
     // About
     about: {
-      heading: "About Osama Mohamed (El-Shimy)",
+      heading: "About Eng. Osama Mohamed Fathy",
       subheading: "Passion for Systems Architecture, Generative AI & Autonomous Automation",
       bio1: "IT Systems Engineer & Intelligent Automation Architect with 5+ years of experience across systems administration, ERP integration (SAP, Odoo, Salesforce), cloud infrastructure, and AI-driven automation.",
       bio2: "Independent innovator behind five award-winning AI projects — three presented directly to Egyptian government ministers (Minister of Health, Minister of Youth & Sports, Minister of Transport) — including a Local Winner title at NASA Space Apps Challenge 2025 (selected from 551 local events worldwide). Consistent 1st-in-class academic record with distinction throughout.",
       location: "Cairo, Egypt",
       email: "ososama7979@gmail.com",
       phone: "+20 115 612 4827",
+      whatsapp: "+20 115 612 4827",
       github: "github.com/Osama-SysEng",
       linkedin: "linkedin.com/in/osama-mohamed-57159a410"
     },
@@ -489,32 +502,36 @@ const translations = {
     },
     // Contact
     contact: {
-      heading: "Let's Build the Future Together",
-      subheading: "Available for technical consulting, AI & automation engineering leadership, and high-impact roles",
-      sendMsg: "Send a Direct Message",
+      heading: "Direct Contact with Osama",
+      subheading: "Choose your preferred channel: Instant WhatsApp, Direct Email, or Phone Call",
+      channelLabel: "Preferred Dispatch Channel:",
+      channelWhatsapp: "Instant WhatsApp",
+      channelEmail: "Direct Email",
+      channelPhone: "Direct Phone Call",
+      sendMsg: "Send a Direct Message to Eng. Osama",
       namePlaceholder: "Your Full Name",
       emailPlaceholder: "Your Email Address",
-      subjectPlaceholder: "Project / Opportunity Subject",
-      messagePlaceholder: "Write your message here...",
-      sendBtn: "Send Message Now",
+      phonePlaceholder: "Your Phone / WhatsApp Number",
+      subjectPlaceholder: "Subject (Opportunity, Consulting, Project)",
+      messagePlaceholder: "Write your message and project details here...",
+      sendBtn: "Dispatch Message Now 🚀",
       directInfo: "Direct Contact Information",
       copied: "Copied to clipboard!"
     },
     // AI Assistant Widget
     assistant: {
       title: "Osama AI Assistant",
-      status: "Online & Ready to Help",
-      placeholder: "Ask about Osama's projects, awards, or engineering experience...",
+      status: "Online & Ready to Dispatch Messages",
+      placeholder: "Ask Osama AI to send a message to Osama or ask about his work...",
       send: "Send",
-      welcome: "Hello! I am Osama Mohamed (El-Shimy)'s AI Assistant. I can tell you all about his NASA Space Apps award, ministerial recognitions, his AI healthcare platform Tabeeby, or his autonomous agent OS_V1. How can I help you today?",
+      welcome: "Welcome to Osama Platform! I am Eng. Osama Mohamed Fathy's AI Assistant. I can tell you all about his projects, NASA Space Apps award, or instantly forward your message to him via WhatsApp or Email. How can I help you?",
       quickPrompts: [
+        "I want to send a WhatsApp message to Osama 📱",
         "Tell me about winning the NASA Space Apps Challenge 2025?",
         "What are the 3 projects presented to Egyptian Ministers?",
         "How does the Tabeeby healthcare platform work?",
-        "What are Osama's skills in AI and enterprise automation?",
-        "How can I contact or hire Osama?"
+        "What are Osama's skills in AI and enterprise automation?"
       ]
     }
   }
 };
-

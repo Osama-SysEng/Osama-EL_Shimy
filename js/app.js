@@ -1,5 +1,8 @@
 ﻿// Main Application Logic
 document.addEventListener('DOMContentLoaded', () => {
+  const OSAMA_PHONE = "201156124827";
+  const OSAMA_EMAIL = "ososama7979@gmail.com";
+
   // 1. Language State & Switcher
   let currentLang = localStorage.getItem('osama_portfolio_lang') || 'ar';
   
@@ -115,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Contact Form Simulation & Clipboard Helpers
+  // 5. Contact Form Submission with WhatsApp & Email Dispatch
   const contactForm = document.getElementById('contact-form');
   const toast = document.getElementById('toast-notification');
 
@@ -133,17 +136,38 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const sendBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = sendBtn.textContent;
-      sendBtn.textContent = currentLang === 'ar' ? 'جارٍ الإرسال...' : 'Sending...';
-      sendBtn.disabled = true;
 
-      setTimeout(() => {
-        sendBtn.textContent = originalText;
-        sendBtn.disabled = false;
-        contactForm.reset();
-        showToast(currentLang === 'ar' ? 'تم إرسال رسالتك بنجاح! سيتواصل معك أسامة في أقرب وقت.' : 'Message sent successfully! Osama will reply shortly.');
-      }, 1000);
+      const name = document.getElementById('form-name').value.trim();
+      const email = document.getElementById('form-email').value.trim();
+      const phone = document.getElementById('form-phone').value.trim();
+      const subject = document.getElementById('form-subject').value.trim();
+      const message = document.getElementById('form-message').value.trim();
+      
+      const channel = document.querySelector('input[name="dispatch-channel"]:checked').value;
+
+      if (channel === 'whatsapp') {
+        const textLines = [
+          `*رسالة جديدة عبر منصة Osama:*`,
+          `👤 *الاسم:* ${name}`,
+          `✉️ *البريد:* ${email}`,
+          phone ? `📱 *الهاتف:* ${phone}` : '',
+          `📌 *الموضوع:* ${subject}`,
+          `💬 *الرسالة:*\n${message}`
+        ].filter(Boolean).join('\n');
+
+        const waUrl = `https://wa.me/${OSAMA_PHONE}?text=${encodeURIComponent(textLines)}`;
+        window.open(waUrl, '_blank');
+        showToast(currentLang === 'ar' ? 'جارٍ تحويلك إلى واتساب لإرسال الرسالة إلى أسامة...' : 'Redirecting to WhatsApp to send message...');
+      } else if (channel === 'email') {
+        const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}\n\n(Sent via Osama Platform)`;
+        const mailUrl = `mailto:${OSAMA_EMAIL}?subject=${encodeURIComponent(`[Osama Platform] ${subject}`)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailUrl;
+        showToast(currentLang === 'ar' ? 'جارٍ فتح تطبيق البريد لإرسال رسالتك...' : 'Opening email client...');
+      } else if (channel === 'phone') {
+        window.location.href = `tel:+${OSAMA_PHONE}`;
+      }
+
+      contactForm.reset();
     });
   }
 
@@ -215,4 +239,3 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(currentLang);
   applyTheme(currentTheme);
 });
-

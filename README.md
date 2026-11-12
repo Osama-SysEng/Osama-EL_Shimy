@@ -1,73 +1,73 @@
-﻿# 🚀 Osama Mohamed (El-Shimy) — 3D Portfolio & AI Platform
+﻿# 🚀 Osama EL_Shimy — 3D AI Platform (منصة Osama)
 
 [![NASA Space Apps Challenge 2025](https://img.shields.io/badge/NASA%20Space%20Apps-Local%20Winner%202025-gold.svg)](https://www.spaceappschallenge.org/)
 [![Google DevFest](https://img.shields.io/badge/Google%20DevFest%20Egypt%202025-1st%20Place-blue.svg)](https://developers.google.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-cyan.svg)](https://osama-syseng.github.io/osama-mohamed-portfolio/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-cyan.svg)](https://osama-syseng.github.io/Osama-EL_Shimy/)
 
-> **الموقع الشخصي التفاعلي ثلاثي الأبعاد للمهندس أسامة محمد (الشيمي)**  
+> **المنصة الرسمية التفاعلية ثلاثية الأبعاد (Osama)**  
+> للمهندس **أسامة محمد فتحي (Osama Mohamed Fathy)**  
 > مهندس نظم تكنولوجيا المعلومات، معماري الأتمتة الذكية والذكاء الاصطناعي، ومبتكر النموذج الهجين **OS_V1**.
 
 ---
 
 ## 🌟 مميزات المنصة (Key Features)
 
+- **الاسم التجاري للمنصة:** **Osama**  
+- **اسم المشروع البرمجي على GitHub:** **Osama EL_Shimy**  
+- **الهوية والاسم الشخصي:** **المهندس أسامة محمد فتحي**  
 - **تصميم ثلاثي الأبعاد تفاعلي (Interactive 3D Graphics):** مبني باستخدام **Three.js** مع نواة عصبية رقمية متحركة ومصفوفة جسيمات متفاعلة مع حركة الفأرة.
-- **دعم لغوي كامل ومتزامن (Bilingual Arabic/English with RTL/LTR):** تبديل فوري وسلس بين اللغتين العربية (مع دعم كامل لاتجاه اليمين لليسار) والإنجليزية.
-- **الوضع الليلي والنهاري (Dark & Light Mode):** دعم كامل للثيمين الداكن والفاتح مع حفظ التفضيل في المتصفح.
-- **مساعد ذكي تفاعلي مدمج ("مساعد أسامة" - Osama AI):**
+- **الصور الشخصية الحقيقية:** تم دمج صور المهندس أسامة الحقيقية في الواجهة الرئيسية (Hero)، قسم التكريمات، قسم السيرة الذاتية، وصورة المساعد الذكي.
+- **نظام مراسلة تفاعلي متعدد القنوات (Multi-Channel Dispatch):**
+  - 💬 **واتساب فوري (WhatsApp):** توجيه الرسائل مباشرة إلى رقم المهندس أسامة `+20 115 612 4827` بنص منسق.
+  - ✉️ **بريد إلكتروني مباشر:** اتصال فوري مع بريده `ososama7979@gmail.com`.
+  - 📞 **اتصال هاتفي:** ربط مباشر للاتصال الفوري.
+- **مساعد ذكي تفاعلي ("مساعد أسامة" - Osama AI):**
   - نافذة محادثة ذكية عائمة للإجابة عن تفاصيل السيرة الذاتية، الجوائز، والابتكارات.
-  - أسئلة مقترحة سريعة تفاعلية (Interactive Prompt Chips).
-- **معرض مرئي عالي الدقة (3D Visuals Showcase):** صور ثلاثية الأبعاد مولدة لكل مشروع وجائزة:
+  - **ميزة الإرسال الفوري:** يمكن للزائر أن يطلب من المساعد الذكي كتابة وتوصيل رسالته إلى أسامة مباشرة عبر الواتساب أو البريد بضغطة زر واحدة!
+- **معرض مرئي عالي الدقة (3D Visuals Showcase):**
   - 🩺 **طبيبي (Tabeeby):** نظام تشغيل الرعاية الصحية (المركز الأول في Google DevFest، عُرض على وزير الصحة).
   - ⚽ **اللعّيب (Al-La'eeb):** منصة التنقيب عن مواهب كرة القدم (المركز الأول بمبادرة مليون مبرمج، عُرض على وزير الشباب والرياضة).
   - 🚆 **مواصلاتي (Mawasilati):** تطبيق النقل الذكي الوطني (أفضل أثر مجتمعي، عُرض على وزير النقل).
   - 🚀 **OSS Work & OS_V1:** النموذج الهجين والوكيل المكتبي المستقل (الفائز المحلي في تحدي ناسا لتطبيقات الفضاء NASA Space Apps 2025).
-- **متوافق مع الهواتف الذكية (Fully Responsive):** تجربة استخدام مثالية على الشاشات الكبيرة والمحمولة.
 
 ---
 
 ## 📂 هيكلية المشروع (Project Architecture)
 
 ```
-osama-mohamed-portfolio/
-├── index.html               # الصفحة الرئيسية والواجهة المتكاملة
+osama-fathy-portfolio/
+├── index.html               # الصفحة الرئيسية التفاعلية
 ├── css/
 │   └── styles.css           # تنسيقات Glassmorphism والثيمات والتأثيرات ثلاثية الأبعاد
 ├── js/
-│   ├── app.js               # منطق التطبيق، الفلترة، النوافذ المنبثقة، وتغيير اللغات
+│   ├── app.js               # منطق التطبيق، إرسال الرسائل عبر واتساب والبريد
 │   ├── translations.js      # القاموس اللغوي الشامل (عربي / إنجليزي)
 │   ├── three-scene.js       # مشهد Three.js التفاعلي والجسيمات الحركية
-│   └── assistant.js         # محرك المساعد الذكي "أسامة" وقاعدة المعرفة
+│   └── assistant.js         # محرك المساعد الذكي "أسامة" وقاعدة المعرفة وتوجيه الرسائل
 ├── assets/
-│   └── images/              # الصور ثلاثية الأبعاد للمشاريع والجوائز والملف الشخصي
+│   └── images/              # الصور الشخصية الحقيقية والصور ثلاثية الأبعاد للمشاريع
+│       ├── osama-hero.jpg   # الصورة الرئيسية للمهندس أسامة في بيئة العمل التقنية
+│       ├── osama-awards.jpg # صورة التكريمات الرسمية أمام شعار النسر
+│       ├── osama-about.jpg  # صورة قسم السيرة الذاتية
+│       ├── osama-avatar.jpg # الأفاتار الرسمي للمساعد الذكي
 │       ├── tabeeby.jpg
 │       ├── al-laeeb.jpg
 │       ├── mawasilati.jpg
 │       ├── os-v1.jpg
-│       ├── awards-showcase.jpg
-│       └── osama-profile.jpg
+│       └── awards-showcase.jpg
 ├── README.md                # دليل التثبيت والنشر
 └── LICENSE                  # ترخيص MIT المفتوح
 ```
 
 ---
 
-## 🚀 كيفية الاستضافة المجانية (Free Deployment)
+## 🌐 الاستضافة الحية (Live Deployment)
 
-### 1. الاستضافة عبر GitHub Pages (الأسهل والموصى بها)
-المشروع عبارة عن Static Web Application خالص، لا يحتاج أي أوامر بناء (Zero-build)!
-1. ادخل إلى مستودعك على GitHub: `https://github.com/Osama-SysEng/osama-mohamed-portfolio`
-2. اذهب إلى **Settings** ← **Pages**.
-3. في خيار **Source** اختر: `Deploy from a branch`، واختر فرع `main` والمجلد `/ (root)`.
-4. اضغط **Save** — سيتم نشر الموقع مجاناً وفورياً على:
-   `https://osama-syseng.github.io/osama-mohamed-portfolio/`
-
-### 2. الاستضافة بنقرة واحدة عبر Vercel أو Netlify
-- يمكنك ربط المستودع مباشرة بـ Vercel أو Netlify ليتم النشر التلقائي مجاناً مع نطاق مخصص وشهادة SSL مجانية.
+الموقع مستضاف مجاناً على منصة GitHub Pages:
+🔗 **رابط المنصة:** [https://osama-syseng.github.io/Osama-EL_Shimy/](https://osama-syseng.github.io/Osama-EL_Shimy/)
 
 ---
 
 ## 📜 الترخيص (License)
 هذا المشروع مفتوح المصدر ومتاح للجميع تحت ترخيص [MIT License](LICENSE).
-

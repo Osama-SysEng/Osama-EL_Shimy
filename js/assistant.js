@@ -1,12 +1,15 @@
 ﻿// Smart AI Assistant: "Osama AI" (مساعد أسامة الذكي)
 (function() {
+  const OSAMA_PHONE = "201156124827";
+  const OSAMA_EMAIL = "ososama7979@gmail.com";
+
   const assistantKnowledge = {
     nasa: {
-      ar: "🏆 فاز المهندس أسامة بلقب **الفائز المحلي (Local Winner)** في **تحدي ناسا لتطبيقات الفضاء NASA Space Apps Challenge 2025** عن مشروعه الاستثنائي **OSS Work والنموذج الهجين OS_V1**. تم اختياره من بين 551 حدثاً محلياً حول العالم! كما حصد المشروع المركز الأول في هاكاثون الذكاء الاصطناعي 2025 (Creativa × TIEC) متفوقاً على أكثر من 260 مشروعاً.",
-      en: "🏆 Eng. Osama won the prestigious **Local Winner** title at the **NASA Space Apps Challenge 2025** for his breakthrough project **OSS Work and the OS_V1 Hybrid Model**, selected from 551 local events worldwide! The project also claimed 1st Place at the AI Hackathon 2025 (Creativa × TIEC) competing against 260+ elite projects."
+      ar: "🏆 فاز المهندس **أسامة محمد فتحي** بلقب **الفائز المحلي (Local Winner)** في **تحدي ناسا لتطبيقات الفضاء NASA Space Apps Challenge 2025** عن مشروعه الاستثنائي **OSS Work والنموذج الهجين OS_V1**. تم اختياره من بين 551 حدثاً محلياً حول العالم! كما حصد المشروع المركز الأول في هاكاثون الذكاء الاصطناعي 2025 (Creativa × TIEC) متفوقاً على أكثر من 260 مشروعاً.",
+      en: "🏆 Eng. **Osama Mohamed Fathy** won the prestigious **Local Winner** title at the **NASA Space Apps Challenge 2025** for his breakthrough project **OSS Work and the OS_V1 Hybrid Model**, selected from 551 local events worldwide! The project also claimed 1st Place at the AI Hackathon 2025 (Creativa × TIEC) competing against 260+ elite projects."
     },
     ministers: {
-      ar: "⭐ تم استعراض وعرض 3 مشاريع ابتكارية للمهندس أسامة شخصياً أمام وزراء الحكومة المصرية:\n\n1. **مشروع 'طبيبي Tabeeby'**: عُرض على **معالي وزير الصحة والسكان** بعد فوزه بالمركز الأول في Google DevFest Egypt 2025.\n2. **منصة 'اللعيب Al-La'eeb'**: عُرضت على **معالي وزير الشباب والرياضة** بعد فوزها بالمركز الأول في مبادرة مليون مبرمج مصري 2025.\n3. **تطبيق 'مواصلاتي Mawasilati'**: تم استعراضه أمام **معالي وزير النقل** بعد حصد جائزة أفضل أثر مجتمعي في مؤتمر مصر للذكاء الاصطناعي (ITIDA/MCIT).",
+      ar: "⭐ تم استعراض وعرض 3 مشاريع ابتكارية للمهندس **أسامة محمد فتحي** شخصياً أمام وزراء الحكومة المصرية:\n\n1. **مشروع 'طبيبي Tabeeby'**: عُرض على **معالي وزير الصحة والسكان** بعد فوزه بالمركز الأول في Google DevFest Egypt 2025.\n2. **منصة 'اللعيب Al-La'eeb'**: عُرضت على **معالي وزير الشباب والرياضة** بعد فوزها بالمركز الأول في مبادرة مليون مبرمج مصري 2025.\n3. **تطبيق 'مواصلاتي Mawasilati'**: تم استعراضه أمام **معالي وزير النقل** بعد حصد جائزة أفضل أثر مجتمعي في مؤتمر مصر للذكاء الاصطناعي (ITIDA/MCIT).",
       en: "⭐ Three of Osama's AI innovations were presented directly to Egyptian Government Ministers:\n\n1. **Tabeeby (AI Healthcare OS)**: Presented to the **Minister of Health** after winning 1st Place at Google Developer Festival Egypt 2025.\n2. **Al-La'eeb (AI Football Scouting)**: Presented to the **Minister of Youth & Sports** after winning 1st Place in the Million Egyptian Programmers Initiative 2025.\n3. **Mawasilati (National Transport)**: Presented to the **Minister of Transport** after winning Best Social Impact at the Egypt AI Conference (ITIDA/MCIT)."
     },
     tabeeby: {
@@ -18,15 +21,11 @@
       en: "🤖 **OS_V1 & OSS Work** is an autonomous desktop AI agent and hybrid model (LLM + decision-weighing engine). Key highlights:\n- Generates complete enterprise ERP systems in 87 seconds!\n- Operates machine via dedicated user account with full browser & GitHub access.\n- Learns from existing builds via Reverse-Engineering Analysis (REA).\n- Handles 1M-token inputs/outputs.\n- Powered by 6 vision modules simulating human eyes to watch video & catch errors."
     },
     skills: {
-      ar: "💻 **ترسانة المهارات التقنية لأسامة:**\n- **لغات البرمجة:** Python, C#, Dart, SQL, R\n- **أطر العمل:** FastAPI, Flask, ASP.NET Core, Flutter\n- **الذكاء الاصطناعي:** Prompt Engineering, RAG (Qdrant + Ollama), Computer Vision (OpenCV, MediaPipe, U-Net, ResNet), LLMs (GPT-4o, Gemini, Claude)\n- **الأتمتة:** n8n, Multi-Agent Orchestration, Telegram Bot API, Webhooks\n- **السحابة والأنظمة:** Docker, GitHub Actions CI/CD, Private Cloud, Linux CLI, PostgreSQL, MySQL\n- **أنظمة الشركات:** SAP, Odoo ERP, Salesforce Development\n- **إنترنت الأشياء:** Arduino, Robotics, Sensors",
+      ar: "💻 **ترسانة المهارات التقنية للمهندس أسامة:**\n- **لغات البرمجة:** Python, C#, Dart, SQL, R\n- **أطر العمل:** FastAPI, Flask, ASP.NET Core, Flutter\n- **الذكاء الاصطناعي:** Prompt Engineering, RAG (Qdrant + Ollama), Computer Vision (OpenCV, MediaPipe, U-Net, ResNet), LLMs (GPT-4o, Gemini, Claude)\n- **الأتمتة:** n8n, Multi-Agent Orchestration, Telegram Bot API, Webhooks\n- **السحابة والأنظمة:** Docker, GitHub Actions CI/CD, Private Cloud, Linux CLI, PostgreSQL, MySQL\n- **أنظمة الشركات:** SAP, Odoo ERP, Salesforce Development\n- **إنترنت الأشياء:** Arduino, Robotics, Sensors",
       en: "💻 **Osama's Technical Skills:**\n- **Languages:** Python, C#, Dart, SQL, R\n- **Frameworks:** FastAPI, Flask, ASP.NET Core, Flutter\n- **AI & LLM:** Prompt Engineering, RAG (Qdrant+Ollama), Computer Vision (OpenCV, MediaPipe, U-Net, ResNet), GPT-4o, Gemini, Claude\n- **Automation:** n8n, Multi-Agent Orchestration, Telegram Bot API, Webhooks\n- **Cloud & DevOps:** Docker, CI/CD, Private Cloud, Linux, PostgreSQL, MySQL\n- **Enterprise:** SAP Integration, Odoo ERP, Salesforce\n- **IoT & Hardware:** Arduino, Sensors, Robotics"
     },
-    contact: {
-      ar: "📬 **معلومات التواصل المباشرة مع أسامة:**\n- **البريد الإلكتروني:** [ososama7979@gmail.com](mailto:ososama7979@gmail.com)\n- **الهاتف / واتساب:** [+20 115 612 4827](tel:+201156124827)\n- **جيت هاب:** [github.com/Osama-SysEng](https://github.com/Osama-SysEng)\n- **لينكد إن:** [linkedin.com/in/osama-mohamed-57159a410](https://linkedin.com/in/osama-mohamed-57159a410)\n- **الموقع الحالي:** القاهرة، مصر (متاح للعمل عن بُعد ولعقود دولية).",
-      en: "📬 **Direct Contact Details:**\n- **Email:** [ososama7979@gmail.com](mailto:ososama7979@gmail.com)\n- **Phone / WhatsApp:** [+20 115 612 4827](tel:+201156124827)\n- **GitHub:** [github.com/Osama-SysEng](https://github.com/Osama-SysEng)\n- **LinkedIn:** [linkedin.com/in/osama-mohamed-57159a410](https://linkedin.com/in/osama-mohamed-57159a410)\n- **Location:** Cairo, Egypt (Available for remote and international engagements)."
-    },
     experience: {
-      ar: "🏢 **المسيرة المهنية للمهندس أسامة:**\n- **مسؤول إدارة أنظمة تكنولوجيا المعلومات** في شركة طبالي (يناير 2026 – الآن).\n- **استشاري تقني ومهندس نظم مستقل** مع مؤسسة ابن خلدون، هيئة الموانئ الأردنية، ومصنع أسمنت مصري خليجي (2025).\n- **مدير المكتب الفني لقطاع مشروعات القاهرة** في شركة الغرابلي للأعمال الهندسية المتكاملة GIECO (2021 – 2024).\n- **مدير تطوير تقني** في مؤسسة الجملي التعليمية (2022 – 2023).\n- **مهندس IT** في شركة المراسم الدولية (2019 – 2021) وتدرج عبر 4 ترقيات في عامين.",
+      ar: "🏢 **المسيرة المهنية للمهندس أسامة محمد فتحي:**\n- **مسؤول إدارة أنظمة تكنولوجيا المعلومات** في شركة طبالي (يناير 2026 – الآن).\n- **استشاري تقني ومهندس نظم مستقل** مع مؤسسة ابن خلدون، هيئة الموانئ الأردنية، ومصنع أسمنت مصري خليجي (2025).\n- **مدير المكتب الفني لقطاع مشروعات القاهرة** في شركة الغرابلي للأعمال الهندسية المتكاملة GIECO (2021 – 2024).\n- **مدير تطوير تقني** في مؤسسة الجملي التعليمية (2022 – 2023).\n- **مهندس IT** في شركة المراسم الدولية (2019 – 2021) وتدرج عبر 4 ترقيات في عامين.",
       en: "🏢 **Osama's Professional Experience:**\n- **IT System Administrator** at Tabali Company (Jan 2026 – Present).\n- **Freelance Technical Consultant** across Egypt, Jordan, and the Gulf (2025).\n- **Head of Technical Office (Cairo Projects)** at GIECO (2021 – 2024).\n- **Development Manager** at El-Gamaly Educational Foundation (2022 – 2023).\n- **IT Engineer** at El-Marasem International (2019 – 2021, 4 promotions in 2 years)."
     },
     education: {
@@ -39,9 +38,60 @@
     return document.documentElement.getAttribute('lang') || 'ar';
   }
 
+  function generateDispatchCard(userMessage) {
+    const lang = getActiveLang();
+    const cleanMsg = userMessage ? encodeURIComponent(userMessage) : encodeURIComponent(lang === 'ar' ? 'مرحباً مهندس أسامة، زرت منصتك وأرغب في التواصل معك بخصوص فرصة تعاون.' : 'Hello Eng. Osama, I visited your platform and would like to connect regarding an opportunity.');
+    const waUrl = `https://wa.me/${OSAMA_PHONE}?text=${cleanMsg}`;
+    const mailUrl = `mailto:${OSAMA_EMAIL}?subject=${encodeURIComponent(lang === 'ar' ? 'تواصل عبر منصة Osama' : 'Contact via Osama Platform')}&body=${cleanMsg}`;
+    const telUrl = `tel:+${OSAMA_PHONE}`;
+
+    if (lang === 'ar') {
+      return `
+        <div class="mt-2 p-3 bg-slate-900/90 rounded-xl border border-cyan-500/40 space-y-2">
+          <p class="font-bold text-cyan-300">🚀 يسعدني توصيل رسالتك للمهندس أسامة الآن!</p>
+          <p class="text-slate-300 text-[11px]">اختر القناة التي تناسبك لإرسال رسالتك مباشرة:</p>
+          <div class="flex flex-col gap-1.5 pt-1">
+            <a href="${waUrl}" target="_blank" class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition shadow-sm">
+              <span>📱</span> إرسال عبر واتساب إلى أسامة الآن
+            </a>
+            <a href="${mailUrl}" target="_blank" class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition shadow-sm">
+              <span>✉️</span> إرسال بريد إلكتروني مباشر (${OSAMA_EMAIL})
+            </a>
+            <a href="${telUrl}" class="flex items-center justify-center gap-2 py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs border border-slate-700 transition">
+              <span>📞</span> اتصال هاتفي مباشر (+20 115 612 4827)
+            </a>
+          </div>
+        </div>
+      `;
+    } else {
+      return `
+        <div class="mt-2 p-3 bg-slate-900/90 rounded-xl border border-cyan-500/40 space-y-2">
+          <p class="font-bold text-cyan-300">🚀 I can forward your message directly to Eng. Osama!</p>
+          <p class="text-slate-300 text-[11px]">Choose your preferred channel to dispatch instantly:</p>
+          <div class="flex flex-col gap-1.5 pt-1">
+            <a href="${waUrl}" target="_blank" class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition shadow-sm">
+              <span>📱</span> Send via WhatsApp to Osama Now
+            </a>
+            <a href="${mailUrl}" target="_blank" class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition shadow-sm">
+              <span>✉️</span> Send Direct Email (${OSAMA_EMAIL})
+            </a>
+            <a href="${telUrl}" class="flex items-center justify-center gap-2 py-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs border border-slate-700 transition">
+              <span>📞</span> Direct Phone Call (+20 115 612 4827)
+            </a>
+          </div>
+        </div>
+      `;
+    }
+  }
+
   function matchQuery(query) {
     const q = query.toLowerCase().trim();
     const lang = getActiveLang();
+
+    // Intent: Message Dispatch / Contact / WhatsApp / Email
+    if (q.includes('رسال') || q.includes('تواصل') || q.includes('واتس') || q.includes('ايميل') || q.includes('بريد') || q.includes('هاتف') || q.includes('توظيف') || q.includes('ارسل') || q.includes('message') || q.includes('contact') || q.includes('whatsapp') || q.includes('email') || q.includes('hire') || q.includes('call') || q.includes('reach') || q.includes('send')) {
+      return generateDispatchCard(query);
+    }
 
     if (q.includes('ناسا') || q.includes('space') || q.includes('nasa') || q.includes('apps') || q.includes('هاكاثون')) {
       return assistantKnowledge.nasa[lang];
@@ -61,19 +111,16 @@
     if (q.includes('خبر') || q.includes('عمل') || q.includes('شرك') || q.includes('تجرب') || q.includes('experience') || q.includes('job') || q.includes('career')) {
       return assistantKnowledge.experience[lang];
     }
-    if (q.includes('تواصل') || q.includes('ايميل') || q.includes('هاتف') || q.includes('توظيف') || q.includes('contact') || q.includes('hire') || q.includes('phone') || q.includes('email')) {
-      return assistantKnowledge.contact[lang];
-    }
     if (q.includes('تعليم') || q.includes('جامع') || q.includes('شهادات') || q.includes('عين شمس') || q.includes('iti') || q.includes('education') || q.includes('degree')) {
       return assistantKnowledge.education[lang];
     }
 
-    // Default friendly answer
-    if (lang === 'ar') {
-      return `شكراً لسؤالك! أنا المساعد الذكي للمهندس أسامة محمد (الشيمي). يمكنني إفادتك بمعلومات تفصيلية عن:\n- مشاريعه الخمسة الفائزة بجوائز دولية ومحلية (مثل Tabeeby، Al-La'eeb، Mawasilati، و OS_V1).\n- فوزه في تحدي ناسا Space Apps 2025.\n- خبرته في إدارة الأنظمة والأتمتة السحابية والـ ERP.\n- كيفية التواصل والتعاون التقني معه.\n\nجرّب النقر على أحد الأسئلة المقترحة أعلاه!`;
-    } else {
-      return `Thank you for your question! I am Eng. Osama Mohamed (El-Shimy)'s AI Assistant. I can help you with:\n- His 5 award-winning AI projects (Tabeeby, Al-La'eeb, Mawasilati, and OS_V1).\n- His NASA Space Apps Challenge 2025 Local Winner title.\n- 5+ years of experience in Systems Administration, Cloud, and ERP integration.\n- Direct contact and hiring details.\n\nTry clicking one of the suggested prompts above!`;
-    }
+    // Default friendly answer with direct dispatch card
+    const defaultText = lang === 'ar'
+      ? `شكراً لسؤالك! أنا المساعد الذكي لمنصة **Osama** والمهندس **أسامة محمد فتحي**.\nيمكنني إفادتك بمعلومات تفصيلية عن مشاريعه وجوائزه، أو **توصيل رسالتك له مباشرة**:`
+      : `Thank you for your question! I am the AI Assistant for the **Osama** Platform and Eng. **Osama Mohamed Fathy**.\nI can provide insights on his work or **dispatch your message directly to him**:`;
+
+    return `${defaultText}\n${generateDispatchCard(query)}`;
   }
 
   // Setup UI elements
@@ -116,10 +163,16 @@
 
       const bubbleEl = document.createElement('div');
       bubbleEl.className = isUser 
-        ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-2xl rounded-br-none px-4 py-2.5 max-w-[85%] text-sm shadow-md'
-        : 'bg-slate-800 text-slate-100 border border-slate-700 rounded-2xl rounded-bl-none px-4 py-2.5 max-w-[88%] text-sm shadow-md whitespace-pre-line';
+        ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-2xl rounded-br-none px-4 py-2.5 max-w-[85%] text-xs shadow-md'
+        : 'bg-slate-800 text-slate-100 border border-slate-700 rounded-2xl rounded-bl-none px-4 py-2.5 max-w-[90%] text-xs shadow-md leading-relaxed';
 
-      bubbleEl.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      // Check if text has HTML tags (like action card)
+      if (text.includes('<div') || text.includes('<a')) {
+        bubbleEl.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      } else {
+        bubbleEl.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+      }
+      
       msgDiv.appendChild(bubbleEl);
       messagesContainer.appendChild(msgDiv);
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
@@ -139,7 +192,7 @@
         if (indicator) indicator.remove();
         const response = matchQuery(query);
         appendMessage(response, false);
-      }, 550);
+      }, 500);
     }
 
     // Handle user input
@@ -166,7 +219,7 @@
 
       prompts.forEach((promptText) => {
         const chip = document.createElement('button');
-        chip.className = 'text-xs bg-slate-800/80 hover:bg-cyan-900/60 text-cyan-300 border border-cyan-800/50 rounded-full px-3 py-1.5 transition whitespace-nowrap';
+        chip.className = 'text-xs bg-slate-800/80 hover:bg-cyan-900/60 text-cyan-300 border border-cyan-800/50 rounded-full px-3 py-1.5 transition whitespace-nowrap cursor-pointer';
         chip.textContent = promptText;
         chip.addEventListener('click', () => {
           appendMessage(promptText, true);
@@ -179,4 +232,3 @@
     window.renderAssistantChips();
   });
 })();
-
