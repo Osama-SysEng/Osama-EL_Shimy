@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://osama-syseng.github.io/Osama-EL_Shimy/sitemap.xml

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://osama-syseng.github.io/Osama-EL_Shimy/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Primary Profile Photos for Google Images Indexing -->
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/osama-hero.jpg</image:loc>
+      <image:title>أسامة الشيمي - أسامة محمد فتحي - Osama Mohamed Fathy (Osama EL_Shimy)</image:title>
+      <image:caption>المهندس أسامة محمد (أسامة الشيمي) مهندس نظم تكنولوجيا المعلومات والذكاء الاصطناعي الفائز في تحدي ناسا لتطبيقات الفضاء</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/osama-about.jpg</image:loc>
+      <image:title>أسامة الشيمي في بيئة العمل الهندسية - Osama Mohamed El-Shimy</image:title>
+      <image:caption>المهندس أسامة الشيمي في المكتب الفني وإدارة الأنظمة التقنية والأتمتة</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/osama-awards.jpg</image:loc>
+      <image:title>أسامة الشيمي مع شعار جمهورية مصر العربية والجوائز الحكومية</image:title>
+      <image:caption>المهندس أسامة محمد الشيمي أثناء التكريمات الرسمية وعرض المشاريع على الوزراء</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/osama-avatar.jpg</image:loc>
+      <image:title>صورة أسامة الشيمي الشخصية - Osama Mohamed Fathy Avatar</image:title>
+      <image:caption>الصورة الرسمية للمهندس أسامة محمد فتحي ومساعد الذكاء الاصطناعي</image:caption>
+    </image:image>
+
+    <!-- Gallery & Media Photos -->
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/gallery/osama-photo-1.jpg</image:loc>
+      <image:title>أسامة الشيمي في المؤتمرات والفعاليات التقنية</image:title>
+      <image:caption>المهندس أسامة محمد أثناء إلقاء المحاضرات وعرض ابتكارات الذكاء الاصطناعي</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/gallery/osama-photo-2.jpg</image:loc>
+      <image:title>أسامة الشيمي في ورش العمل الهندسية</image:title>
+      <image:caption>مشاريع الذكاء الاصطناعي والأتمتة للمهندس أسامة محمد فتحي</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/gallery/osama-photo-3.jpg</image:loc>
+      <image:title>المهندس أسامة الشيمي - تكريمات وإنجازات الأنظمة</image:title>
+      <image:caption>فعاليات وتكريمات المهندس أسامة الشيمي في الذكاء الاصطناعي</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/gallery/osama-photo-4.jpg</image:loc>
+      <image:title>المهندس أسامة محمد فتحي - حاضنات الأعمال وهاكاثونات الذكاء الاصطناعي</image:title>
+      <image:caption>تحدي ناسا لتطبيقات الفضاء وهاكاثون TIEC Creativa</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/gallery/osama-photo-5.jpg</image:loc>
+      <image:title>أسامة الشيمي - معرض الصور والمشاريع</image:title>
+      <image:caption>المؤتمرات الهندسية واللقاءات الرسمية للمهندس أسامة الشيمي</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/tabeeby.jpg</image:loc>
+      <image:title>مشروع طبيبي Tabeeby AI Healthcare OS - أسامة الشيمي</image:title>
+      <image:caption>نظام تشغيل الرعاية الصحية الذكي المعروض على معالي وزير الصحة والسكان</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/al-laeeb.jpg</image:loc>
+      <image:title>مشروع اللعيب Al-La'eeb AI Football Scouting - أسامة الشيمي</image:title>
+      <image:caption>منصة التنقيب عن المواهب الرياضية المعروضة على معالي وزير الشباب والرياضة</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/mawasilati.jpg</image:loc>
+      <image:title>مشروع مواصلاتي Mawasilati Smart Transport - أسامة الشيمي</image:title>
+      <image:caption>نظام النقل الذكي المعروض على معالي وزير النقل</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://osama-syseng.github.io/Osama-EL_Shimy/assets/images/os-v1.jpg</image:loc>
+      <image:title>مشروع OS_V1 &amp; OSS Work AI Agent - أسامة الشيمي</image:title>
+      <image:caption>النموذج الهجين ووكيل الذكاء الاصطناعي المكتبي الفائز بتحدي ناسا NASA Space Apps 2025</image:caption>
+    </image:image>
+  </url>
+</urlset>
